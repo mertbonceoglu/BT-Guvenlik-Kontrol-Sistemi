@@ -1,0 +1,26 @@
+[project]
+name = "proxiguard"
+version = "2.0.0"
+description = "ProxiGuard: Bluetooth Tabanlı Güvenlik ve Kontrol Sistemi"
+
+[tool.flet]
+org = "com.proxiguard"
+product = "ProxiGuard"
+company = "ProxiGuard"
+
+[tool.flet.android]
+adaptive_icon_background = "#0D1117"
+
+[tool.flet.splash]
+color = "#0D1117"
+dark_color = "#0D1117"
+
+[project.dependencies]
+flet = ">=0.84.0"
+firebase-admin = ">=7.0.0"
+
+# PC servisi için gerekli (Android APK'da bulunmaz)
+# psutil = ">=5.9.0"
+# opencv-python = ">=4.8.0"
+# pyautogui = ">=0.9.54"
+# bleak = ">=0.21.0"

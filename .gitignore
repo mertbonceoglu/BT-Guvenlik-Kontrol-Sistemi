@@ -1,0 +1,46 @@
+# ==========================================
+# GÜVENLİK VE GİZLİLİK (ASLA GİT'E EKLENMEZ)
+# ==========================================
+# Firebase servis hesabı anahtarı (özel anahtarlar içerir)
+*firebase_key.json
+core/firebase_key.json
+**/firebase_key.json
+
+# Kamera fotoğrafları ve gizli loglar
+logs/
+logs/*
+logs/**
+*.jpg
+*.jpeg
+*.png
+!assets/icon.png
+servis_baslangic_log.txt
+servis_hata_log.txt
+
+# Çevre değişkenleri ve gizli ayarlar
+.env
+*.env
+
+# ==========================================
+# PYTHON VE SANAL ORTAMLAR
+# ==========================================
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Derleme ve paketleme çıktıları
+build/
+dist/
+*.egg-info/
+*.spec
+
+# IDE ve İşletim Sistemi
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store

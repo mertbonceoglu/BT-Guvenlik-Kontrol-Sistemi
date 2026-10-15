@@ -1,0 +1,12 @@
+# PC Servisi (bt_servis.py) için gerekli bağımlılıklar
+# Kurulum: pip install -r requirements-pc.txt
+# Not: Bu paketler Android APK'ya dahil edilmez.
+
+flet>=0.84.0,<1.0.0
+firebase-admin>=7.0.0
+psutil>=5.9.0
+opencv-python>=4.8.0
+pyautogui>=0.9.54
+bleak>=0.21.0
+pystray>=0.19.0
+Pillow>=10.0.0

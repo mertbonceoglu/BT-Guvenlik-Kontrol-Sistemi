@@ -1,0 +1,57 @@
+============================================
+  PROXIGUARD: BLUETOOTH GUVENLIK SISTEMI
+============================================
+
+Bu sistem, bilgisayarinizi masada birakip uzaklastiginizda
+otomatik olarak kilitler. Birisi bilgisayariniza dokunursa
+fotograf cekip telefonunuza bildirim gonderir.
+
+
+  ILK KURULUM (sadece 1 kere):
+  ─────────────────────────────
+  1. araclar\Kur.bat dosyasini calistirin
+     (Python kutuphanelerini otomatik yukler)
+
+  2. firebase_key.json dosyasinin core klasorunde
+     oldugunu kontrol edin
+
+  3. Servisi_Baslat.bat dosyasina cift tiklayin
+     (Bluetooth taramasi baslar)
+
+
+  TELEFON UYGULAMASI:
+  ─────────────────────────────
+  4. araclar\APK_Derle.bat ile APK olusturun
+     veya hazir APK'yi telefonunuza yukleyin
+
+  5. Telefonunuza "ntfy" uygulamasini indirin
+     ve kanal adini girin (bildirim almak icin)
+
+
+  YENI TELEFON ESLESTIRME (PC PANELI):
+  ─────────────────────────────
+  Sistemi baska bir telefonla kullanmak isterseniz:
+  1. Arka planda servis (Servisi_Baslat.bat) calisiyorsa kapatin.
+  2. PC'de "venv\Scripts\python.exe main.py" komutunu calistirarak 
+     veya main.py dosyasini acarak Masaustu Panelini acin.
+  3. "Ayarlar" sekmesinden "Cihaz Tara" butonuna basip listeden
+     yeni telefonunuzu secin. 
+  4. Paneli kapatip normal sekilde Servisi_Baslat.bat'i acabilirsiniz.
+
+
+  WINDOWS BASLANGICI (istege bagli):
+  ─────────────────────────────
+  6. araclar\Baslangiça_Ekle.bat dosyasini
+     1 kere calistirin. Artik bilgisayar her
+     acildiginda servis otomatik baslar.
+
+
+  DOSYA YAPISI:
+  ─────────────────────────────
+  Servisi_Baslat.bat  → Servisi baslatir (gunluk kullanim)
+  main.py             → Hem PC Masaustu Paneli hem de Mobil Arayuz
+  bt_servis.py        → Bluetooth arka plan servisi
+  core/               → Ayarlar ve Firebase baglantisi
+  servis/             → Kamera, sistem izleyici, tepsi ikonu
+  ui/                 → Arayuz sekmeleri (Dashboard, Alarm, vb.)
+  araclar/            → Kurulum ve derleme scriptleri

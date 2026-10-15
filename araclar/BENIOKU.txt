@@ -1,0 +1,19 @@
+============================================
+  ARACLAR KLASORU - Ne Ise Yararlar?
+============================================
+
+Kur.bat
+  → Projeyi ilk kez kurarken 1 KERE calistirilir.
+    Python kutuphanelerini otomatik yukler.
+
+Baslangiça_Ekle.bat
+  → 1 KERE calistirilir.
+    Bilgisayar her acildiginda servisi otomatik baslatir.
+
+APK_Derle.bat
+  → Telefon uygulamasini (Android APK) derler.
+    Sadece APK olusturmak istediginde calistir.
+
+NOT: Servisi tamamen gizli arka planda baslatmak icin ana klasordeki
+     'Servisi_Baslat_Gizli.vbs' dosyasina cift tiklayin.
+     Siyah ekran gorebilmek icin ise bu klasordeki 'Servisi_Baslat.bat' kullanilabilir.
